@@ -1,0 +1,4 @@
+cd /home/dev/www/date.c4ei.net
+yarn dev
+
+

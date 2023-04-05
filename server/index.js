@@ -2,17 +2,16 @@ const express = require('express');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const port = process.env.PORT || 3001;
+const port = process.env.API_PORT || 3004;
 const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use((req, res, next) => {
   const allowedOrigins = [
-    'http://localhost:3000',
-    'http://ypetitjean.fr:3000',
-    'https://maatcha.herokuapp.com',
-    'http://maatcha.herokuapp.com',
+    'http://localhost:3003',
+    'http://localhost:3004',
+    'http://date.c4ei.net',
   ];
   const { origin } = req.headers;
   if (allowedOrigins.indexOf(origin) > -1) {

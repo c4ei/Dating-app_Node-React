@@ -22,6 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+docker-compose_postgres.yml
 
 server/config/db-log.js
 .env

@@ -56,9 +56,9 @@
   "scripts": {
     "client-install": "npm install",
     "start": "npm run dev",
-    "client": "react-scripts start",
+    "client": "export PORT=3003 && react-scripts start",
     "server": "node ./server/index.js",
-    "serverlocal": "npx nodemon ./server/index.js --ignore './src/' localhost 3001",
+    "serverlocal": "npx nodemon ./server/index.js --ignore './src/' localhost 3004",
     "prodclient": "npx serve -s build",
     "build": "react-scripts build",
     "dev": "concurrently \"npm run serverlocal\" \"npm run client\"",
